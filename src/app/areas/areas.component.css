@@ -1,0 +1,18 @@
+.area-card {
+    position: relative;
+    display: inline-block;
+    max-width: 300px;
+    margin: 20px;
+    border-radius: 2px;
+    box-shadow:  0 2px;
+  }
+  
+  .area-header-image {
+    background-size: cover;
+  }
+
+.grid-wrapper{
+    width: 100%;
+    margin: 0 auto 20px auto;
+    text-align: center;
+}

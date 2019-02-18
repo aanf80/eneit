@@ -1,0 +1,11 @@
+#example1 {
+    padding: 150px;
+    background: url(https://pbs.twimg.com/media/DpuUpllU8AAuJO_.jpg) repeat center center fixed ;
+    background-size: cover;
+    text-align:center;
+	display:block;
+	font-family:"Roboto", Arial, sans-serif;
+	font-size: xx-large;
+	color:#FFF;
+	line-height:0;
+  }

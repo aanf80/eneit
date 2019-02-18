@@ -1,0 +1,41 @@
+
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport="true"
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+     >
+   <mat-toolbar ><img src="https://nme.tepic.tecnm.mx/assets/images/LOGO-ENEIT-2018.png"></mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item href="/inicio">Inicio</a>
+      <a mat-list-item href="/objetivos">Objetivos</a>
+      <a mat-list-item href="/areas">Áreas de participación</a>
+      <a mat-list-item href="/categorias">Categorías</a>
+      <a mat-list-item href="#">Participantes</a>
+      <a mat-list-item href="/documentos">Documentos</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar >
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span><a  href="/inicio">
+        <img src="https://nme.tepic.tecnm.mx/assets/images/LOGO-ENEIT-2018.png">
+
+    </a></span>
+    <span class="example-spacer"></span>
+    
+    <a href="https://www.facebook.com/eneitecnm/" target="blank"><i class="fab fa-facebook"></i></a>
+    &nbsp;    &nbsp;    &nbsp;
+    <a href="https://twitter.com/ENEIToficial?lang=es" target="blank"><i class="fab fa-twitter"></i></a>
+    
+    </mat-toolbar>
+    <!-- Add Content Here -->
+    <ng-content></ng-content>
+
+  </mat-sidenav-content>
+</mat-sidenav-container>
